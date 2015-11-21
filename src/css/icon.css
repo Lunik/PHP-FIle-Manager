@@ -1,0 +1,56 @@
+a.action {
+	display:inline-block;
+	background-repeat: no-repeat;
+	background-size: 15px;
+	background-position: 4px 2px;
+	padding:4px 5px 4px 20px;
+}
+
+a.delete {
+	background-image: url("../image/delete.png");
+	color:#DF0101;	
+}
+
+a.download {
+	background-image: url("../image/download.png");
+	color:#01DFD7;	
+}
+
+a.zip{
+	display: none;
+	background-image: url("../image/zip.png");
+	color:#FFBF00;	
+}
+
+a.rename{
+	background-image: url("../image/rename.png");
+	color:#DF7401;	
+}
+
+a.move{
+	display: none;
+	background-image: url("../image/move.png");
+	color:#86c351;	
+}
+
+a.no{
+	visibility: hidden;
+}
+
+.name {
+	background-repeat: no-repeat;
+	background-image: url("../image/file.png");
+	background-size: 25px;
+	padding:15px 0 10px 30px;
+}
+
+.is_dir .name { background-image: url("../image/dir.png");}
+.name#avi{ background-image: url("../image/avi.png");}
+.name#mkv{ background-image: url("../image/mkv.png");}
+.name#html{ background-image: url("../image/html.png");}
+.name#jpg{ background-image: url("../image/jpg.png");}
+.name#mp3{ background-image: url("../image/mp3.png");}
+.name#mp4{ background-image: url("../image/mp4.png");}
+.name#pdf{ background-image: url("../image/pdf.png");}
+.name#png{ background-image: url("../image/png.png");}
+.name#txt{ background-image: url("../image/txt.png");}
