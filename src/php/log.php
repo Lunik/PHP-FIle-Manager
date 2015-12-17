@@ -26,7 +26,6 @@ function logs($type,$text){
 			break;
 		default:
 			$filename = '../../logs/default.log';
-			exec("/usr/local/sbin/sms Torrent: ".$text);
 			break;
 	}
 

@@ -21,6 +21,9 @@ function getPseudo(){
 		case 'link':
 			$pseudo = "FalseLink";
 			break;
+		case 'toman':
+			$pseudo = "Toman";
+			break;
 		default:
 			$pseudo = "Anonymous";
 			break;
@@ -33,7 +36,7 @@ function changePasswd($username, $new_password){
 	$new_password = crypt($new_password, base64_encode($new_password));
 
     //read the file into an array
-	$lines = explode("\n", file_get_contents('/var/www/rutorrent/.htpasswd'));
+	$lines = explode("\n", file_get_contents('/var/www/.htpasswd'));
 
 	//read the array and change the data if found
     $new_file = "";
@@ -51,7 +54,7 @@ function changePasswd($username, $new_password){
     }
 
     //save the information
-    $f=fopen("/var/www/rutorrent/.htpasswd","w") or die("couldn't open the file");
+    $f=fopen("/var/www/.htpasswd","w") or die("couldn't open the file");
     fwrite($f,$new_file);
     fclose($f);
 }

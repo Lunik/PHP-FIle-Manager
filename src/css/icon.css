@@ -27,9 +27,8 @@ a.rename{
 	color:#DF7401;	
 }
 
-a.move{
-	display: none;
-	background-image: url("../image/move.png");
+a.info{
+	background-image: url("../image/info.png");
 	color:#86c351;	
 }
 

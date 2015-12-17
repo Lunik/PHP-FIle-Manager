@@ -81,6 +81,6 @@ if($_GET['do'] == 'list') {
 	<a href="#" class="ytdl">Ajouter</a>
 	<a href="#" class="change-password">Change Password</a>
 	<script src="src/js/app.js"></script>
-	<script src="http://guillaume-lunik.fr/googleAnalytics.js"></script>
+	<script src="src/js/mediainfo.js"></script>
 </body>
 </html>
