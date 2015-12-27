@@ -258,9 +258,9 @@ function formatFileSize(bytes) {
 
 function cleanName(name){
 
-	name = name.replace(/\.[A-Za-z]*$/,'')
+	name = name.replace(/\.[A-Za-z0-9]*$/,'')
 		.replace(/S[0-9]*E[0-9]*/, '') //numero d'episode
-		.replace(/[ \.](([Ff][Rr])|(VOSTFR)|(FASTSUB)|(HDTV)|(XviD-ARK01))/g, '')
+		.replace(/[ \.](([Ff][Rr])|([Vv][Oo])|(VOSTFR)|(FASTSUB)|(HDTV)|(XviD-ARK01))/g, '')
 		.replace(/\./g,' ') //point
 		.replace(/ $/,''); //espace en fin de chaine
 
